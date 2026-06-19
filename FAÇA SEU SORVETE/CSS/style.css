@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Black+Ops+One&family=Bungee&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Black Ops One", system-ui;
+    font-style: normal;
+    color: violet ;
+    -webkit-text-stroke: 1px rgb(150, 0, 117);
+}
+
+h2 {
+    font-family: "Archivo Black", sans-serif;
+    color: rgb(65, 121, 72);
+    font-size: 17px;
+}
+
+h3 {
+    font-family: "Archivo Black", sans-serif;
+    color: rgb(128, 6, 139);
+    font-size: 17px;
+}
+
+header {
+   text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;  
+}
+
+body {
+    background-image: url('../IMG/decoration/wallpapersorvetes.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.desfoque {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.titulo {
+    margin-bottom: 10px;
+}
+.indice {
+    font-family: "Bungee", sans-serif;
+    font-style: normal;
+    color: rgb(212, 0, 255);
+    font-size: 20px;
+    -webkit-text-stroke: 0.5px rgb(46, 4, 56);
+    margin-bottom: 10px;
+}
+
+.tipoItem {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.painel {
+    border: 5px solid rgb(221, 192, 233);
+    border-radius: 40px;
+    background-color: rgb(196, 182, 209);
+    box-shadow: 9px 9px 20px rgb(209, 144, 200);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 35px;
+}
+
+.itens {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 45px;
+}
+
+.imagemItem {
+    width: 100px;
+    height: 100px;
+}
+
+.selecionar {
+    overflow: hidden;
+    border: 2px solid rgb(101, 78, 110);
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.selecionar:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.selecionar:active {
+    transform: scale(0.8);
+}
+
+.voltar {
+    font-size: 25px;
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 20px;
+    transition: transform 0.4s ease;
+}
+
+.voltar:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.voltar:active {
+    transform: scale(0.8);
+}
+
+.concluido {
+    border: 5px solid rgb(221, 192, 233);
+    border-radius: 40px;
+    background-color: rgb(196, 182, 209);
+    box-shadow: 9px 9px 20px rgb(209, 144, 200);
+    padding: 40px;
+    width: fit-content;  
+    margin: 0 auto;
+}
+
+.painelConclusao {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.precoTotal {
+    grid-column: 1 / -1; 
+    text-align: center;
+}
+
+.itensEscolhidos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 2px solid rgb(101, 78, 110);
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#adicionarPedidos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    width: fit-content; 
+}
+
+#gridItens {
+    display: grid;
+    grid-template-columns: repeat(2, 120px);
+    gap: 10px; 
+}
+
+.Inicio {
+    grid-column: 1 / -1; 
+    justify-self: center;
+    font-size: 25px;
+    padding: 8px;
+    border: 2px solid rgb(101, 78, 110);
+    border-radius: 20px;
+    transition: transform 0.4s ease;
+    font-family: "Archivo Black", sans-serif;
+    color: rgb(47, 22, 49);
+    font-size: 17px;
+}
+
+.Inicio:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.Inicio:active {
+    transform: scale(0.8);
+}
